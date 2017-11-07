@@ -14,7 +14,7 @@ namespace Polymorphism
 
             foreach (var order in orderlist)
             {
-                Console.WriteLine($"Order subtotal: ${order.Subtotal}, the discount is: ${order.GetDiscount}, and the final total is: ${order.GetOrderTotal}");
+                Console.WriteLine($"Order type is: {order.GetType().Name}. Order subtotal: ${order.Subtotal}, the discount is: ${order.GetDiscount}, and the final total is: ${order.GetOrderTotal}");
             }
 
             Console.ReadLine();
