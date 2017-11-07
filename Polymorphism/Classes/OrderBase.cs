@@ -16,5 +16,7 @@ namespace Polymorphism.Classes
         public virtual decimal SetDiscount() {
             return .05m;
         }
+
+        public string Type => this.GetType().Name;
     }
 }
