@@ -12,8 +12,8 @@ namespace Polymorphism
         {
             var orderlist = OrderProcessingQueueSetup();  // Get our mocked up queue of orders.
 
-            // Simulate processing each order in the list, get its type and calculate the discount
-            // based on the type of order.
+            // Simulate processing each order in the list, getting the order type and calculating the discount
+            // based on that type.
             foreach (var order in orderlist)
             {
                 Console.WriteLine($"Order type is: {order.Type}. Order subtotal: ${order.Subtotal}, the discount is: ${order.GetDiscount}, and the final total is: ${order.GetOrderTotal}");
